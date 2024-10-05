@@ -115,7 +115,7 @@ const ProductCard = ({ product, onRate, isZoomed, onZoom }) => {
         </button>
         <button
           className="absolute right-2 top-2 text-gray-600 hover:text-gray-900"
-          onClick={() => console.log(`Added ${product.name} to cart`)} // Placeholder for adding to cart functionality
+          onClick={() => console.log(`Added ${product.name} to cart`)}
         >
           <FaShoppingBag size={24} />
         </button>
