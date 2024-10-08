@@ -37,7 +37,7 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-10">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/product">All Products</Link></li>
+          <li><Link to="/products">Products</Link></li>
           <li><Link to="/contact">Contact us</Link></li>
         </ul>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="absolute top-16 left-0 w-full bg-teal-600 flex flex-col items-center md:hidden">
             <Link to="/" onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">Home</Link>
             <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">About</Link>
-            <Link to="/product" onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">All Products</Link>
+            <Link to="/products" onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">Products</Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">Contact us</Link>
           </div>
         )}

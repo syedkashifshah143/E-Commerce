@@ -18,7 +18,7 @@ export const newUser = async (req, res) => {
     try {
        
         const { name, price } = req.body;
-        const image = req.file ? req.file.path : null;
+        const image = req.file ? req.file.filename : null;
 
         const user = new productsModel({ name, price, image });
         await user.save();
