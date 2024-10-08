@@ -9,8 +9,11 @@ import Footer from './components/Home/Footer';
 import Home from './components/Home/Home';
 import Product from './components/Home/Product';
 import AdminDashboard from './components/Admin/AdminDashboard';
+import ProtectedRoute from './components/ProtectedRoute';
 
 const App = () => {
+  const isAuthenticated = true; // Replace with your actual authentication logic
+
   return (
     <>
       <Navbar />
@@ -22,7 +25,15 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<RegisterForm />} />
           <Route path="/login" element={<LoginForm />} />
-          <Route path="/admin/*" element={<AdminDashboard />} />
+          <Route 
+            path="/admin/*" 
+            element={
+              <ProtectedRoute 
+                element={<AdminDashboard />} 
+                isAuthenticated={isAuthenticated} 
+              />
+            } 
+          />
         </Routes>
       </div>
       <Footer />

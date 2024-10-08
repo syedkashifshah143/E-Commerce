@@ -39,6 +39,7 @@ const Navbar = () => {
           <li><Link to="/about">About</Link></li>
           <li><Link to="/products">Products</Link></li>
           <li><Link to="/contact">Contact us</Link></li>
+          <li><Link to="/admin/*" >Admin</Link></li>
         </ul>
 
         {/* Mobile Hamburger Menu Button */}
@@ -55,6 +56,7 @@ const Navbar = () => {
             <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">About</Link>
             <Link to="/products" onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">Products</Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">Contact us</Link>
+            <Link to="/admin/*"  onClick={() => setMobileMenuOpen(false)} className="px-4 py-2">Admin</Link>
           </div>
         )}
       </div>
